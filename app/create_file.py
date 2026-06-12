@@ -30,7 +30,7 @@ def read_lines_from_input() -> list[str]:
     lines: list[str] = []
     while True:
         line = input("Enter content line: ")
-        if line.strip().lower() == "stop":
+        if line.strip() == "stop":
             break
         lines.append(line.strip())
     return lines
